@@ -1,0 +1,26 @@
+{
+  "name": "dockview",
+  "version": "0.0.1",
+  "bin": {
+    "dockview": "./dist/bin/dockview.js"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@dockview/shared": "workspace:*",
+    "commander": "^12.1.0",
+    "dockerode": "^4.0.9",
+    "fast-glob": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "yaml": "^2.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
